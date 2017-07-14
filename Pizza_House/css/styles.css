@@ -1,4 +1,4 @@
-#delivery {
+.delivery {
   display:none;
 }
 
@@ -10,4 +10,28 @@
 }*/
 #ingredients-list {
   display:none;
+}
+img {
+  clear: both;
+  float: left;
+  margin: -400px;
+  padding: -600px;
+  margin-left: 800px;
+  max-width: 40%;
+  max-height: 40%;
+  object-fit: contain;
+}
+.jumbotron {
+  padding: 5%;
+  border-radius: 0 !important;
+  /*background-color: 35% #f7f7ee;*/
+}
+.btn {
+  background-color: yellow;
+}
+#hide-topping {
+  display:none;
+}
+/*#ORDER-hide {
+    display:none;*/
 }

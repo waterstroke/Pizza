@@ -8,26 +8,46 @@
   <title>Pizza Time</title>
 </head>
   <body>
-    <div class="container">
-    <div class="row" id="order-section">
-      <div class="col-md-12">
-        <form class="begin-order">
-          <label for="name-input">Please enter your name for the order:</label>
-          <input id="name" type="text"><br>
-          <button type="submit" class="btn" id="submission">Submit</button>
-        </form>
+    <div class="jumbotron">
+      <div id="HIDE-EVERYTHING">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Never know Pizza Parlor</h1>
+            <p>We Pride ourselves on all organic ingredients staight from our own gardens. Brick fired and ended with a drizzle of Olive oil.</p>
+            <p>We understand what Portland wants and use sustainable and compostable products only</p>
+            <p>We have daily specials Check out our chefs choice Pizza Pie</p>
 
- <!-- //hidden from view until the person fills out the name, then it displays -->
- <div class="row">
-  <div class="col-md-12">
-  <form class="delivery-option">
-      <input type="checkbox" name="option" value="delivery"><span id="name"></span> Would you like us to Deliver your Pizza to your home?<br>
-      <input type="checkbox" name="option" value="pickup">Would you like to pick up your pizza?<br>
-      <button type="submit" class="btn" id="deliveryOpt">Start an order ticket</button>
-    </form>
-  </div>
+            <h3>Our pricing is as follows:</h3>
+            <p>All pizzas start at a base price, then add as you go for just 2.00 a toping</p><br>
+            <ul>
+              <li>Small:            <font size="4" face="Courier New body copy">$12.00</font></li><br>
+              <li>Medium:           <font size="4" face="Courier New body copy">$16.00</font></li><br>
+              <li>Large:            <font size="4" face="Courier New body copy">$24.00</font></li><br>
+              <li>Chefs specialty Pizza Pie:             <font size="4" face="Courier New body copy">$32.00</font></li><br>
+              <li>Toppings:         <font size="4" face="Courier New body copy">$2.00 each</font></li><br>
+            </ul>
+          </div>
+          <img src="img/pizza.png">
 
-<!-- //hidden from view until the person chooses an option delivery or pickup. If they choose pickup this does not display -->
+              <div class="col-md-12">
+              <form class="begin-order">
+                <label for="name-input">Please enter your name for the order:</label>
+                <input id="name" type="text"><br>
+                <button type="submit" class="btn" id="submission">Submit</button>
+              </form>
+              </div>
+
+       <!-- //hidden from view until the person fills out the name, then it displays -->
+       <div class="row">
+        <div class="col-md-12">
+        <form class="delivery-option">
+            <input type="checkbox" name="option" value="delivery"><span id="name"></span> Would you like us to Deliver your Pizza to your home?<br>
+            <input type="checkbox" name="option" value="pickup">Would you like to pick up your pizza?<br>
+            <button type="submit" class="btn" id="deliveryOpt">Start an order ticket</button>
+          </form>
+        </div>
+      </div>
+      <!-- //hidden from view until the person chooses an option delivery or pickup. If they choose pickup this does not display -->
       <div class="row">
         <div class="col-md-12">
           <form class="delivery">
@@ -38,97 +58,64 @@
             <button type="submit" class="btn" id="submitAddress">Submit my address</button>
           </form>
         </div>
-
-  </div>
-</div>
-
-
-
-    </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Never know Pizza Parlor</h1>
-          <p>We Pride ourselves on all organic ingredients staight from our own gardens. Brick fired and ended with a drizzle of Olive oil.</p>
-          <p>We understand what Portland wants and use sustainable and compostable products only</p>
-          <p>We have daily specials Check out our chefs choice Pizza Pie</p>
-
-          <h3>Our pricing is as follows:</h3>
-          <p>All pizzas start at a base price, then add as you go for just 2.00 a toping</p><br>
-          <ul>
-            <li>Small:            <font size="4" face="Courier New body copy">$12.00</font></li><br>
-            <li>Medium:           <font size="4" face="Courier New body copy">$16.00</font></li><br>
-            <li>Large:            <font size="4" face="Courier New body copy">$24.00</font></li><br>
-            <li>Chefs specialty Pizza Pie:             <font size="4" face="Courier New body copy">$32.00</font></li><br>
-            <li>Toppings:         <font size="4" face="Courier New body copy">$2.00 each</font></li><br>
-          </ul>
-        </div>
-      <!-- <div id="hidden-section"> -->
-        <div class="jumbotron">
-        <div class="row">
-          <div class="col-md-6">
-            <form id="toppings-list">
-              <div class="form-group">
-                <h2>Toppings</h2>
-                <input type="checkbox" name="toppings" value="pepperoni">cheese<br>
-                <input type="checkbox" name="toppings" value="pineapple">peppers<br>
-                <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
-                <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
-                <input type="checkbox" name="toppings" value="mushrooms">mushrooms<br>
-                <input type="checkbox" name="toppings" value="olives">Olives<br>
-                <input type="checkbox" name="toppings" value="anchovies">Anchovies<br>
-                <input type="checkbox" name="toppings" value="extra-cheese">Extra Cheese<br>
-              </div>
+      </div>
+          <div class="row">
+            <div class="col-md-6">
+            <div id = "hide-topping">
+              <form id="toppings-list">
+                <div class="form-group">
+                  <h2>Toppings</h2>
+                  <input type="checkbox" name="toppings" value="pepperoni">cheese<br>
+                  <input type="checkbox" name="toppings" value="pineapple">peppers<br>
+                  <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+                  <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
+                  <input type="checkbox" name="toppings" value="mushrooms">mushrooms<br>
+                  <input type="checkbox" name="toppings" value="olives">Olives<br>
+                  <input type="checkbox" name="toppings" value="anchovies">Anchovies<br>
+                  <input type="checkbox" name="toppings" value="extra-cheese">Extra Cheese<br>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <h2>Specialty cheeses</h2>
+                    <input type="checkbox" name="toppings" value="feta cheese">feta cheese<br>
+                    <input type="checkbox" name="toppings" value="Mozerella">Mozerella<br>
+                    <input type="checkbox" name="toppings" value="Parmassion">Parmassion<br>
+                  </div>
+                </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <h2>Specialty cheeses</h2>
-                  <input type="checkbox" name="toppings" value="feta cheese">feta cheese<br>
-                  <input type="checkbox" name="toppings" value="Mozerella">Mozerella<br>
-                  <input type="checkbox" name="toppings" value="Parmassion">Parmassion<br>
+                  <h2>Pizza size</h2>
+                  <input type="checkbox" name="size" value="small">small<br>
+                  <input type="checkbox" name="size" value="medium">medium<br>
+                  <input type="checkbox" name="size" value="large">large<br>
+                  <input type="checkbox" name="size" value="Specialty">Specialty<br>
                 </div>
               </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <h2>Pizza size</h2>
-                <input type="checkbox" name="size" value="small">small<br>
-                <input type="checkbox" name="size" value="medium">medium<br>
-                <input type="checkbox" name="size" value="large">large<br>
-                <input type="checkbox" name="size" value="Specialty">Specialty<br>
-              </div>
+                <button type="submit" id="final-order">Pizza Total</button>
+              </form>
             </div>
-              <button type="submit" id="final-order">Pizza Total</button>
-            </form>
-
+          </div>
         </div>
       </div>
     </div>
+       <div id = "ORDER-hide"
         <div class="row">
           <div class="col-md-12">
             <h2>Your order total: $<span id="total-cost"></span></h2>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3 id="thanks"></h3>
-        </div>
+
         <div class="row">
           <div class="col-md-12">
-            <div id="addressResults">
+            <h3 id="thanks"></h3>
+          </div>
+        </div>
 
-            </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12" id="pizza-icon-parent">
-          <div id="pizza-icon">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>We will be delivering your pizza to:<span id="deliveryLocation"></span></h4>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  </div>
-  </div>
-
-
-  </body>
+    </body>
 </html>

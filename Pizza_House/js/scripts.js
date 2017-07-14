@@ -24,7 +24,7 @@ Pizza.prototype.chooseDelivery = function() {
   this.deliveryOpt = $("input:checkbox[name=option]:checked").val();
 }
 
-Pizza.prototype.buildPizza = function() {
+Pizza.prototype.createPizza = function() {
   this.size = $("input:checkbox[name=size]:checked").val();
   var inputToppings = [];
   $("input:checkbox[name=toppings]:checked").each(function() {
@@ -47,34 +47,46 @@ Pizza.prototype.buildPizza = function() {
   $("#total-cost").text(this.price);
   $("#name").text(this.name);
   $("#thanks").text("Thank you for your order, " + this.name + "!");
+  $("#input-address").text(this.address);
+  $("#deliveryLocation").text(this.address);
+
 }
 
 
 //User Interface Logic
 $(document).ready(function() {
   var orderedPizza = new Pizza();
+  //This is for the click function to hold the name for the order
   $("#submission").click(function(event) {
     event.preventDefault();
     orderedPizza.getName();
-    // $("#hidden-section").css("display","initial");
-
     $(".delivery-option").show()
+    $(".begin-order").hide()
+    // $("form#toppings-list").hide()
   })
 // this has to submit the DELIVERY OPTION
   // $(".delivery-option").hide()
 
   $("#deliveryOpt").click(function(event) {
     event.preventDefault();
-    // $("#delivery-address").show()
+    $(".delivery-option").hide()
+    // if (click === delivery)
+    $(".delivery").show();
+  })
 
+
+  $("#submitAddress").click(function(event) {
+    event.preventDefault();
     orderedPizza.getAddress();
-  $(".delivery-option").hide()
-    // $("#hidden-section").css("display","initial");
+    $(".delivery").hide();
+    $("#hide-topping").show();
   })
 
   $("#final-order").click(function(event) {
     event.preventDefault();
     // $(".toppings-list").show()
-      orderedPizza.buildPizza();
+    orderedPizza.createPizza();
+    $("#HIDE-EVERYTHING").hide()
+    $("#ORDER-hide").Show()
   })
 });
