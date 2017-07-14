@@ -87,6 +87,6 @@ $(document).ready(function() {
     // $(".toppings-list").show()
     orderedPizza.createPizza();
     $("#HIDE-EVERYTHING").hide()
-    $("#ORDER-hide").Show()
+    $("#image-hide").Show();
   })
 });
