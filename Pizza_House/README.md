@@ -8,7 +8,7 @@ _I have created a site that gves you a selection of toppings and sizes. Using pr
 
 ## link to site on GitHub Pages
 
-https://waterstroke.github.io/IP_wk8/
+https://waterstroke.github.io/Pizza/Pizza_House/
 
 ## Support and contact details
 
